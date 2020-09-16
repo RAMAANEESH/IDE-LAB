@@ -1,0 +1,432 @@
+Week 2
+
+Step 1:- INTRO
+CODE:-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace myApp
+{
+    class Program
+    {
+        static void Main()
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
+
+OUTPUT:-
+CONSOLE
+Hello World!
+  
+
+STEP2:- STRINGS
+CODE
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace myApp
+{
+    class Program
+    {
+        static void Main()
+        {
+            Console.WriteLine("Hello RAMA!");
+        }
+    }
+}
+OUTPUT:- Hello RAMA!
+STEP3:- VARIABLES
+CODE:-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace myApp
+{
+    class Program
+    {
+        static void Main()
+        {
+            var name = "RAMA";
+            Console.WriteLine("Hello " + name + "!");
+        }
+    }
+}
+
+OUTPUT:- Hello RAMA!
+STEP 4:- STRING INTERPOLATION
+CODE:-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace myApp
+{
+    class Program
+    {
+        static void Main()
+        {
+            var name = "RAMA";
+            Console.WriteLine($"Hello {name}!");
+        }
+    }
+}
+OUTPUT:-
+Hello RAMA!
+STEP5:- METHODS
+CODE
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace myApp
+{
+    class Program
+    {
+        static void Main()
+        {
+            var name = "RAMA";
+            Console.WriteLine($"Hello {name.ToUpper()}!");
+        }
+    }
+}
+OUTPUT
+Hello RAMA!
+STEP6:- COLLECTION
+CODE:-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace myApp
+{
+    class Program
+    {
+        static void Main()
+        {
+            var names = new List<string> { "RAMA", "Felipe", "Emillia" };
+            foreach (var name in names)
+            {
+                Console.WriteLine($"Hello {name.ToUpper()}!");
+            }
+        }
+    }
+}
+OUTPUT:- Hello RAMA!
+Hello FELIPE!
+Hello EMILLIA!
+EXPLORE INTEGER MATH
+CODE:-
+int a = 18;
+int b = 6;
+int c = a + b;
+int d = a - b;
+int e = a * b;
+int f = a % b;
+Console.WriteLine(c);
+Console.WriteLine(d);
+Console.WriteLine(e);
+Console.WriteLine(f);
+
+OUTPUT:-
+24
+12
+108
+0
+
+EXPLORE ORDER OF OPERATIONS
+CODE:- int a = 5;
+int b = 4;
+int c = 2;
+int d = a + b * c;
+int e = (a + b) * c;
+int f = (a + b) / c;
+int g = (a + b) - 6 * c + (12 * 4) / 3 + 12;
+Console.WriteLine(f);
+Console.WriteLine(d);
+Console.WriteLine(e);
+Console.WriteLine(g);
+
+OUTPUT:-
+4
+13
+18
+25
+
+EXPLORE INTEGER PERCISION
+CODE:- int a = 7;
+int b = 4;
+int c = 3;
+int d = (a + b) / c;
+int e = (a + b) % c;
+Console.WriteLine($"quotient: {d}");
+Console.WriteLine($"remainder: {e}");
+
+OUTPUT:-
+quotient: 3
+remainder: 2
+
+WORK WITH DOUBLE TYPE
+CODE:-
+double a = 5;
+double b = 4;
+double c = 2;
+double d = (a + b) / c;
+Console.WriteLine(d);
+double third = 1.0 / 3.0;
+Console.WriteLine(third);
+
+OUTPUT:-
+4.5
+0.333333333333333
+
+WORK WITH DECIMAL TYPES
+CODE:-
+double a = 1.0;
+double b = 3.0;
+Console.WriteLine(a / b);
+
+decimal c = 1.0M;
+decimal d = 3.0M;
+Console.WriteLine(c / d);
+OUTPUT:-
+0.333333333333333
+0.3333333333333333333333333333
+
+ COMPLETE CHALLENGE
+
+CODE:- double radius = 2.50;
+double area = Math.PI * radius * radius;
+Console.WriteLine(area);
+
+OUTPUT:-
+19.6349540849362
+
+
+
+
+
+Program for if and else using “&&” operator
+Code:- int a = 5;
+int b = 3;
+int c = 4;
+if ((a + b + c > 10) && (a == b))
+{
+    Console.WriteLine("The answer is greater than 10");
+    Console.WriteLine("And the first number is equal to the second");
+}
+else
+{
+    Console.WriteLine("The answer is not greater than 10");
+    Console.WriteLine("Or the first number is not equal to the second");
+}
+Output:-
+The answer is not greater than 10
+Or the first number is not equal to the second
+
+
+Program using “||” operator
+Code:- int a = 5;
+int b = 3;
+int c = 4;
+if ((a + b + c > 10) || (a == b))
+{
+    Console.WriteLine("The answer is greater than 10");
+    Console.WriteLine("Or the first number is equal to the second");
+}
+else
+{
+    Console.WriteLine("The answer is not greater than 10");
+    Console.WriteLine("And the first number is not equal to the second");
+}
+Output:- 
+The answer is greater than 10
+Or the first number is equal to the second
+
+Loops using “ while loops”
+Code: int counter = 0;
+while (counter < 10)
+{
+  Console.WriteLine($"Hello World! The counter is {counter}");
+  counter++;
+}
+
+Output:-
+Hello World! The counter is 0
+Hello World! The counter is 1
+Hello World! The counter is 2
+Hello World! The counter is 3
+Hello World! The counter is 4
+Hello World! The counter is 5
+Hello World! The counter is 6
+Hello World! The counter is 7
+Hello World! The counter is 8
+Hello World! The counter is 9
+
+Program for “ do- while loop”
+Code:-
+int counter = 0;
+do
+{
+  Console.WriteLine($"Hello World! The counter is {counter}");
+  counter++;
+} while (counter < 10);
+Output:-
+Hello World! The counter is 0
+Hello World! The counter is 1
+Hello World! The counter is 2
+Hello World! The counter is 3
+Hello World! The counter is 4
+Hello World! The counter is 5
+Hello World! The counter is 6
+Hello World! The counter is 7
+Hello World! The counter is 8
+Hello World! The counter is 9
+
+Program using “for loop”
+for(int counter = 0; counter < 10; counter++)
+{
+  Console.WriteLine($"Hi this is aneesh! The counter is {counter}");
+}
+Output:-
+Hi this is aneesh! The counter is 0
+Hi this is aneesh! The counter is 1
+Hi this is aneesh! The counter is 2
+Hi this is aneesh! The counter is 3
+Hi this is aneesh! The counter is 4
+Hi this is aneesh! The counter is 5
+Hi this is aneesh! The counter is 6
+Hi this is aneesh! The counter is 7
+Hi this is aneesh! The counter is 8
+Hi this is aneesh! The counter is 9
+
+Program for “nested loop” using “for loop”
+
+Program:- for (int row = 1; row < 11; row++)
+{
+  for (char column = 'a'; column < 'k'; column++)
+  {
+    Console.WriteLine($"The matrix value ({row}, {column})");
+  }
+}
+Output:-
+The matrix value (1, a)
+The matrix value (1, b)
+The matrix value (1, c)
+The matrix value (1, d)
+The matrix value (1, e)
+The matrix value (1, f)
+The matrix value (1, g)
+The matrix value (1, h)
+The matrix value (1, i)
+The matrix value (1, j)
+The matrix value (2, a)
+The matrix value (2, b)
+The matrix value (2, c)
+The matrix value (2, d)
+The matrix value (2, e)
+The matrix value (2, f)
+The matrix value (2, g)
+The matrix value (2, h)
+The matrix value (2, i)
+The matrix value (2, j)
+The matrix value (3, a)
+The matrix value (3, b)
+The matrix value (3, c)
+The matrix value (3, d)
+The matrix value (3, e)
+The matrix value (3, f)
+The matrix value (3, g)
+The matrix value (3, h)
+The matrix value (3, i)
+The matrix value (3, j)
+The matrix value (4, a)
+The matrix value (4, b)
+The matrix value (4, c)
+The matrix value (4, d)
+The matrix value (4, e)
+The matrix value (4, f)
+The matrix value (4, g)
+The matrix value (4, h)
+The matrix value (4, i)
+The matrix value (4, j)
+The matrix value (5, a)
+The matrix value (5, b)
+The matrix value (5, c)
+The matrix value (5, d)
+The matrix value (5, e)
+The matrix value (5, f)
+The matrix value (5, g)
+The matrix value (5, h)
+The matrix value (5, i)
+The matrix value (5, j)
+The matrix value (6, a)
+The matrix value (6, b)
+The matrix value (6, c)
+The matrix value (6, d)
+The matrix value (6, e)
+The matrix value (6, f)
+The matrix value (6, g)
+The matrix value (6, h)
+The matrix value (6, i)
+The matrix value (6, j)
+The matrix value (7, a)
+The matrix value (7, b)
+The matrix value (7, c)
+The matrix value (7, d)
+The matrix value (7, e)
+The matrix value (7, f)
+The matrix value (7, g)
+The matrix value (7, h)
+The matrix value (7, i)
+The matrix value (7, j)
+The matrix value (8, a)
+The matrix value (8, b)
+The matrix value (8, c)
+The matrix value (8, d)
+The matrix value (8, e)
+The matrix value (8, f)
+The matrix value (8, g)
+The matrix value (8, h)
+The matrix value (8, i)
+The matrix value (8, j)
+The matrix value (9, a)
+The matrix value (9, b)
+The matrix value (9, c)
+The matrix value (9, d)
+The matrix value (9, e)
+The matrix value (9, f)
+The matrix value (9, g)
+The matrix value (9, h)
+The matrix value (9, i)
+The matrix value (9, j)
+The matrix value (10, a)
+The matrix value (10, b)
+The matrix value (10, c)
+The matrix value (10, d)
+The matrix value (10, e)
+The matrix value (10, f)
+The matrix value (10, g)
+The matrix value (10, h)
+The matrix value (10, i)
+The matrix value (10, j)
+
+Challenge:-
+int sum = 0;
+for (int number = 1; number < 21; number++)
+{
+  if (number % 3 == 0)
+  {
+    sum = sum + number;
+  }
+}
+Console.WriteLine($"The sum is {sum}");
+
+Output 
+The sum is 63
+
+
