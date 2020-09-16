@@ -1,0 +1,98 @@
+Week 3
+
+Programs on list
+1st program on how to create a list
+Code:- var names = new List<string> { "<name>", "Ana", "Felipe" };
+foreach (var name in names)
+{
+  Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+Output:-
+Hello <RAM>!
+Hello ANA!
+Hello FELIPE!
+
+MODIFY LIST CONTENTS
+
+	            
+	            names.Add("Maria");
+	            names.Add("Bill");
+	            names.Remove("Ana");
+	            foreach (var name in names)
+	            {
+	                Console.WriteLine($"Hello {name.ToUpper()}!");
+	            }
+	
+	            Console.WriteLine($"My name is {names[0]}");
+	            Console.WriteLine($"I've added {names[2]} and {names[3]} to the list");
+	
+	            Console.WriteLine($"The list has {names.Count} people in it");
+
+
+	
+	          SEARCH AND SORT LIST
+
+	
+	            var index = names.IndexOf("Felipe");
+	            if (index == -1)
+	            {
+	                Console.WriteLine($"When an item is not found, IndexOf returns {index}");
+	            }
+	            else
+	            {
+	                Console.WriteLine($"The name {names[index]} is at index {index}");
+	            }
+	
+	            index = names.IndexOf("Not Found");
+	            if (index == -1)
+	            {
+	                Console.WriteLine($"When an item is not found, IndexOf returns {index}");
+	            }
+	            else
+	            {
+	                Console.WriteLine($"The name {names[index]} is at index {index}");
+	
+	            }
+	
+	            names.Sort();
+	            foreach (var name in names)
+	            {
+	                Console.WriteLine($"Hello {name.ToUpper()}!");
+	            }
+
+
+Program on Fibonacci number
+Code:-
+var fibonacciNumbers = new List<int> {1, 1};
+
+while (fibonacciNumbers.Count < 20)
+{
+    var previous = fibonacciNumbers[fibonacciNumbers.Count - 1];
+    var previous2 = fibonacciNumbers[fibonacciNumbers.Count - 2];
+
+    fibonacciNumbers.Add(previous + previous2);
+}
+foreach(var item in fibonacciNumbers)
+    Console.WriteLine(item);
+Output
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+144
+233
+377
+610
+987
+1597
+2584
+4181
+6765
+
